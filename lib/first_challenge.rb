@@ -14,6 +14,15 @@ def first_challenge
   }
 
   #your code here
+  contacts['Freddie Mercury'].map!{
+    |category|
+    category.each{
+      |item|
+      if item == 'strawberry'
+        category.delete(item)
+    }
+  }
+ 
 
 
   #remember to return your newly altered contacts hash!
